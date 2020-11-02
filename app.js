@@ -10,7 +10,7 @@ app.listen('3000',function(err){
     }
     else
     {
-        console.log('server started successfully')
+        console.log('server started successfully work done')
     }
 
 }) 
