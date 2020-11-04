@@ -13,10 +13,53 @@
 
 }
 .navbar{
+  
     border: 1px solid black;
     //background-color: blue;
     grid-area: nav;
 }
+
+ *{
+        box-sizing:border-box;
+    }
+    body{
+        margin:0;
+        background:gray;
+
+    }
+    nav{
+        background: #594848;
+        widows: 100%;
+        overflow:auto;
+
+    }
+    ul{
+        margin:0;
+        padding:0;
+        list-style:none;
+
+    }
+    li{
+        float:left;
+    }
+    nav a{
+        width:120px;
+        display:block;
+        text-decoration: none;
+        text-align: center;
+        background: #594848;
+        font-size: 17px;
+        color:white;
+        padding: 20px 10px;
+        font-family: Arial;
+        
+
+    }
+    nav a:hover{
+        background: skyblue;
+        color:black;
+    }
+
 .ad_top{
     border: 1px solid black;
     //background-color: blueviolet;
@@ -82,6 +125,8 @@
 }
 @media screen and (max-width: 550px)
 {
+  
+
  .testcont{
      display: grid;
      grid-template-columns: 1fr;
@@ -95,3 +140,4 @@
      grid-template-areas: "img" "img" "img" "img" "img" "img" "t_bar";
  }   
 }
+
