@@ -1,7 +1,97 @@
 .testcont{
-    background-color: aqua;
+    //background-color: aqua;
+    display: grid;
+    grid-template-columns: 0.25fr 6fr 0.25fr ;
+    grid-template-rows: 0.5fr 0.75fr 5fr 0.5fr;
+    grid-template-areas: "nav nav nav" "ad_top ad_top ad_top" "ad_left main_area ad_right" "ad_left footer ad_right";
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    bottom: 0px;
+    right: 0px;
+    grid-gap: 10px;
+
 }
-#para
+.navbar{
+    border: 1px solid black;
+    //background-color: blue;
+    grid-area: nav;
+}
+.ad_top{
+    border: 1px solid black;
+    //background-color: blueviolet;
+    grid-area: ad_top;
+}
+.ad_left{
+    border: 1px solid black;
+    //background-color: brown;
+    grid-area: ad_left;
+}
+.main_area{
+    border: 1px solid black;
+    //background-color: burlywood;
+    grid-area: main_area;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 0.1fr ;
+    grid-template-areas: "img img img" "img img img" "t_bar t_bar t_bar";
+    grid-auto-rows: 400px;
+    grid-gap: 50px;
+}
+.t_bar{
+    border: 1px solid black;
+    grid-area: t_bar;
+    //background-color: lawngreen;
+}
+.image{
+    border: 1px solid black;
+    //background-color: indianred;
+}
+.imgage-1{
+    grid-area: img;
+}
+.imgage-2{
+    grid-area: img;
+
+}
+.imgage-3{
+    grid-area: img;
+
+}
+.imgage-4{
+    grid-area: img;
+
+}
+.imgage-5{
+    grid-area: img;
+
+}
+.imgage-6{
+    grid-area: img;
+
+}
+.ad_right{
+    border: 1px solid black;
+    //background-color: greenyellow;
+    grid-area: ad_right;
+}
+.footer{
+    border: 1px solid black;
+    //background-color: green;
+    grid-area: footer;
+}
+@media screen and (max-width: 550px)
 {
-    font-size: x-large;
+ .testcont{
+     display: grid;
+     grid-template-columns: 1fr;
+     grid-template-rows: 0.25fr 0.75fr 8fr 0.1fr 0.1fr 0.75fr;
+     grid-template-areas: "nav" "ad_top" "main_area" "ad_left" "ad_right" "footer";
+ }
+ .main_area{
+     display: grid;
+     grid-template-columns: 1fr;
+     grid-template-rows: 2fr 2fr 2fr 2fr 2fr 2fr 2fr;
+     grid-template-areas: "img" "img" "img" "img" "img" "img" "t_bar";
+ }   
 }
