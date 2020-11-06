@@ -9,7 +9,7 @@
     left: 0px;
     bottom: 0px;
     right: 0px;
-    grid-gap: 10px;
+    //grid-gap: 10px;
 
 }
 .navbar{
@@ -19,17 +19,18 @@
     grid-area: nav;
 }
 
- *{
-        box-sizing:border-box;
-    }
-    body{
-        margin:0;
-        background:gray;
+*{
+    box-sizing: border-box;
+}
+ body{
+     margin: 0;
+     background-color: white;
+ }
 
-    }
+
     nav{
         background: #594848;
-        widows: 100%;
+        width: 100%;
         overflow:auto;
 
     }
@@ -86,9 +87,22 @@
     grid-area: t_bar;
     //background-color: lawngreen;
 }
+.next_previous
+{
+    display:flex;
+    justify-content: space-evenly;
+    
+}
 .image{
     border: 1px solid black;
     //background-color: indianred;
+   
+}
+.picture
+{
+    width: 100%;
+    height: 100%;
+    object-fit: fill;
 }
 .imgage-1{
     grid-area: img;

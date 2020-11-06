@@ -6,11 +6,9 @@
     <meta charset="UTF-8">
    <!--- <meta name="viewport" content="width=device-width, initial-scale=1.0">-->
     <title>Landing page</title>
-
-    
-    
   
-    <link rel="stylesheet" type="text/css" href="/css/style.css">-->
+    <link rel="stylesheet" type="text/css" href="/css/style.css">
+    <link rel="stylesheet" type="text/css" href="/css/teststyle.css">
 
 </head>
 <body>
@@ -19,7 +17,7 @@
     <link rel="stylesheet" type="text/css" href="/css/style.css">
 </head>
 <body>
-    <!--<nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
     
         <a class="navbar-brand" href="#">Navbar</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -56,37 +54,45 @@
         </div>
       </nav>-->
 <div class="testcont">
-    <div class="item navbar"><h1>Navbar</h1></div>
-    <div class="item ad_top"><h4>Advertisement-top</h4></div>
+    <div class="item navbar">
+        <nav>
+        <ul>
+            
+            <li><a href="#">Home</a></li>    
+            <li><a href="#">Products</a></li>  
+            <li><a href="#">Whislist</a></li>  
+            <li><a href="#">Cart</a></li>  
+            <li><a href="#">checkout</a></li>  
+    
+            
+        </ul>
+    </nav></div>
+    <div class="item ad_top">
+        <div id="tst" class="adcont"></div>
+    </div>
     <div class="item ad_left"><h4>Advertisement-left</h4></div>
-    <div class="item main_area">
-        <div class="image image-1"><h3>image 1</h3></div>
-        <div class="image image-2"><h3>image 2</h3></div>
-        <div class="image image-3"><h3>image 3</h3></div>
-        <div class="image image-4"><h3>image 4</h3></div>
-        <div class="image image-5"><h3>image 5</h3></div>
-        <div class="image image-6"><h3>image 6</h3></div>
-        <div class="t_bar"><h3>A bar to show next and previous button</h3></div>
+    <div id="imgcont" class="item main_area">
+       <div class="image image-1"><img class="picture" src="/css/images/download.jpg" alt=""><div><p>this is an image</p>></div></div>
+        <!--<div class="image image-2"><img class="picture" src="/css/images/download.jpg" alt=""></div>
+        <div class="image image-3"><img class="picture" src="/css/images/caveman.jpg" alt=""></div>
+        <div class="image image-4"><img class="picture" src="/css/images/marble1.jpg" alt=""></div>
+        <div class="image image-5"><img class="picture" src="/css/images/lakeside.jpg" alt=""></div>
+        <div class="image image-6"><img class="picture" src="/css/images/citylights.jpg" alt=""></div>-->
+        
 
     </div>
+    
     <div class="item ad_right"><h4>Advertisement-right</h4></div>
-    <div class="item footer"><h1>Footer</h1></div>
-</div>    
--->
-<nav>
-    <ul>
-        
-        <li><a href="#">Home</a></li>    
-        <li><a href="#">Products</a></li>  
-        <li><a href="#">Whislist</a></li>  
-        <li><a href="#">Cart</a></li>  
-        <li><a href="#">checkout</a></li>  
+    <div class="item footer"><div class="t_bar"><div class="next_previous">
+        <div class="prev_btn"><button onclick="popFromStack()">prev</button></div>
+        <div class="show_page_num"><span id="page_num"></span></div>
+        <div class="next_btn"><button onclick="pushToStack()">next</button></div>
 
-        
-    </ul>
-</nav>
+    </div></div><h1>Footer</h1></div>
+    
+</div>
+<script src="/css/javascript/test.js"></script>  
 </body>
 </html>
 
-<!--<h1>This will be landing page and we are in a new version</h1>-->
 

@@ -4,7 +4,7 @@ app.use(express.static("public"))
 app.get('/',function(req,res){
     res.render('index.ejs')
 })
-app.listen('3000',function(err){
+app.listen('3001',function(err){
     if(err)
     {
         console.log(err)
