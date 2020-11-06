@@ -6,7 +6,7 @@ for (let index = 0; index < 5; index++) {
     rethtml=document.getElementById('tst').innerHTML
 
 }
-var arr = ['download','citylights','lakeside','fireman','marble','wedges','marble1','citylights','download','citylights','lakeside','fireman']
+var arr = ['download','citylights','lakeside','fireman','marble','wedges','marble1','citylights','download','citylights','lakeside','fireman','marble','wedges','marble1','citylights']
 var arrayDivide=[]
 const len=arr.length
 var x=0;
@@ -108,7 +108,7 @@ else{
     function dispImage(image)
     {
         imgurl=url+image+".jpg"
-    document.getElementById('imgcont').innerHTML="<div class='image image-1'><img class='picture' src='"+imgurl+"' alt=><div><h2>this is an image</h2></div></div>"+retarrayimage;
+    document.getElementById('imgcont').innerHTML="<div class='image image-1'><div class='imgpart'><img class='picture' src='"+imgurl+"' alt=></div><div class='description_of_image'><div class='buttons_below_image'><form action='/views' method='get'><div class='view_button'><button>View More</button></div></form><form action='/buypage' method='get'><div class='buy_button'><button>Buy</button></div></form></div><div class='desc_below_image'><p>description goes in here</p></div></div></div>"+retarrayimage;
     retarrayimage=document.getElementById('imgcont').innerHTML
     }
     //document.getElementById('imgcont').innerHTML="<p>no of images are more</p>"
