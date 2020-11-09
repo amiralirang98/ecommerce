@@ -108,7 +108,8 @@ else{
     function dispImage(image)
     {
         imgurl=url+image+".jpg"
-    document.getElementById('imgcont').innerHTML="<div class='image image-1'><div class='imgpart'><img class='picture' src='"+imgurl+"' alt=></div><div class='description_of_image'><div class='buttons_below_image'><form action='/views' method='get'><div class='view_button'><button>View More</button></div></form><form action='/buypage' method='get'><div class='buy_button'><button>Buy</button></div></form></div><div class='desc_below_image'><p>description goes in here</p></div></div></div>"+retarrayimage;
+    document.getElementById('imgcont').innerHTML="<div class='image image-1'><div class='imgpart'><img class='picture' src='"+imgurl+"' onclick='addToCart(this);'></div><div class='description_of_image'><div class='buttons_below_image'><form action='/views' method='get'><div class='view_button'><button>View More</button></div></form><div class='buy_button' onclick='A'><button>Add To Cart</button></div></div><div class='desc_below_image'><p>description goes in here</p></div></div></div>"+retarrayimage;
     retarrayimage=document.getElementById('imgcont').innerHTML
     }
+    console.log(localStorage)
     //document.getElementById('imgcont').innerHTML="<p>no of images are more</p>"
