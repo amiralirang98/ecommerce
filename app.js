@@ -4,7 +4,13 @@ app.use(express.static("public"))
 app.get('/',function(req,res){
     res.render('index.ejs')
 })
-app.listen('3000',function(err){
+app.get('/views',function(req,res){
+    res.render('product_view.ejs')
+})
+app.get('/buypage',function(req,res){
+    res.render('buy_page.ejs')
+})
+app.listen('3001',function(err){
     if(err)
     {
         console.log(err)

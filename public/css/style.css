@@ -3,7 +3,7 @@
     display: grid;
     grid-template-columns: 0.25fr 6fr 0.25fr ;
     grid-template-rows: 0.5fr 0.75fr 5fr 0.5fr;
-    grid-template-areas: "nav nav nav" "ad_top ad_top ad_top" "ad_left main_area ad_right" "ad_left footer ad_right";
+    grid-template-areas: "nav nav nav" "ad_top ad_top ad_top" "main_area main_area main_area" "ad_left footer ad_right";
     position: absolute;
     top: 0px;
     left: 0px;
@@ -33,6 +33,21 @@
         align-items: center;
         background-color: #594848;
         color: white;
+
+*{
+    box-sizing: border-box;
+}
+ body{
+     margin: 0;
+     background-color: white;
+ }
+
+
+    nav{
+        background: #594848;
+        width: 100%;
+        overflow:auto;
+
 
     }
     .brand-title{
@@ -112,11 +127,18 @@
     grid-area: t_bar;
     //background-color: lawngreen;
 }
+.next_previous
+{
+    display:flex;
+    justify-content: space-evenly;
+    
+}
 .image{
     border: 1px solid black;
     //background-color: indianred;
    
 }
+
 .picture{
     width:100%;
     height:100%;
@@ -125,6 +147,35 @@
 .imgage-1{
     grid-area: img;
    
+
+.picture
+{
+    width: 100%;
+    height: 300px;
+    object-fit: fill;
+}
+.imgage-1{
+
+  grid-area: img;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-area: "img" "desc";
+    align-content: space-around;
+}
+.buttons_below_image
+{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+}
+.imgpart
+{
+    grid-area: img;
+}
+.description_of_image
+{
+    grid-area: desc;
 }
 .imgage-2{
     grid-area: img;
