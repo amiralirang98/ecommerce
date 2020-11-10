@@ -1,3 +1,8 @@
+/*var togglebutton= document.getElementsByClassName('toggle-button')[0]
+var navbarlinks= document.getElementsByClassName('bar-links')[0]
+togglebutton=addEventListener('click',function(){
+    navbarlinks.classList.toggle('active')
+})*/
 var rethtml=""
 var retimage=""
 var retarrayimage=""
@@ -6,7 +11,7 @@ for (let index = 0; index < 5; index++) {
     rethtml=document.getElementById('tst').innerHTML
 
 }
-var arr = ['download','citylights','lakeside','fireman','marble','wedges','marble1','citylights','download','citylights','lakeside','fireman','marble','wedges','marble1','citylights']
+var arr = ['download','citylights','lakeside','fireman','marble']
 var arrayDivide=[]
 const len=arr.length
 var x=0;
@@ -29,10 +34,13 @@ document.getElementById('page_num').innerHTML=pointer;
 var url="/css/images/"
 if(arr.length<=6)
 {
+    document.getElementById('page_num').innerHTML=1;
 for (let index = 0; index < arr.length; index++) {
     imgurl=url+arr[index]+".jpg"
-    document.getElementById('imgcont').innerHTML="<div class='image image-1'><img class='picture' src='"+imgurl+"' alt=></div>"+retimage;
-    retimage=document.getElementById('imgcont').innerHTML
+   /* document.getElementById('imgcont').innerHTML="<div class='image image-1'><img class='picture' src='"+imgurl+"' alt=></div>"+retimage;
+    retimage=document.getElementById('imgcont').innerHTML*/
+    document.getElementById('imgcont').innerHTML="<div class='image image-"+(index+1)+"'><div class='imgpart'><img class='picture' src='"+imgurl+"' onclick='addToCart(this);'></div><div class='description_of_image'><div class='buttons_below_image'><form action='/views' method='get'><div class='view_button'><button>View More</button></div></form><div class='buy_button' onclick='A'><button>Add To Cart</button></div></div><div class='desc_below_image'><p>description goes in here</p></div></div></div>"+retarrayimage;
+    retarrayimage=document.getElementById('imgcont').innerHTML
 
 }
 }
@@ -76,7 +84,7 @@ else{
         console.log(a)
         for(let i=1; i<=a.length; i++)
         {
-            dispImage(a[i-1])
+            dispImage(a[i-1],i)
         }
         
         document.getElementById('page_num').innerHTML=pointer+1
@@ -99,16 +107,16 @@ else{
         console.log(a)
         for(let i=1; i<=a.length; i++)
         {
-            dispImage(a[i-1])
+            dispImage(a[i-1],i)
         }
         
             document.getElementById('page_num').innerHTML=pointer+1;
         }
     }
-    function dispImage(image)
+    function dispImage(image,num)
     {
         imgurl=url+image+".jpg"
-    document.getElementById('imgcont').innerHTML="<div class='image image-1'><div class='imgpart'><img class='picture' src='"+imgurl+"' onclick='addToCart(this);'></div><div class='description_of_image'><div class='buttons_below_image'><form action='/views' method='get'><div class='view_button'><button>View More</button></div></form><div class='buy_button' onclick='A'><button>Add To Cart</button></div></div><div class='desc_below_image'><p>description goes in here</p></div></div></div>"+retarrayimage;
+    document.getElementById('imgcont').innerHTML="<div class='image image-"+num+"'><div class='imgpart'><img class='picture' src='"+imgurl+"' onclick='addToCart(this);'></div><div class='description_of_image'><div class='buttons_below_image'><form action='/views' method='get'><div class='view_button'><button>View More</button></div></form><div class='buy_button' onclick='A'><button>Add To Cart</button></div></div><div class='desc_below_image'><p>description goes in here</p></div></div></div>"+retarrayimage;
     retarrayimage=document.getElementById('imgcont').innerHTML
     }
     console.log(localStorage)

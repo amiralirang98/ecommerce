@@ -4,21 +4,23 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-   <!--- <meta name="viewport" content="width=device-width, initial-scale=1.0">-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Landing page</title>
   
     <link rel="stylesheet" type="text/css" href="/css/style.css">
+
     <link rel="stylesheet" type="text/css" href="/css/teststyle.css">
 
 </head>
 <body>
    <!-- <nav class="navbar navbar-expand-lg navbar-light bg-light">
-
     <link rel="stylesheet" type="text/css" href="/css/style.css">
 </head>
 <body>
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
+
     
+
         <a class="navbar-brand" href="#">Navbar</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
@@ -55,7 +57,19 @@
       </nav>-->
 <div class="testcont">
     <div class="item navbar">
-        <nav>
+        <nav class="bar">
+            <div class="brand-title">Brand name</div>
+            <a href="#" class="toggle-button">
+                <span class="burg"></span>
+                <span class="burg"></span>
+                <span class="burg"></span>
+                
+            </a>
+            <div class="bar-links">
+
+
+    
+
         <ul>
             
             <li><a href="#">Home</a></li>    
@@ -66,29 +80,132 @@
     
             
         </ul>
+
+            </div>
     </nav></div>
+    <div class="item ad_top"><h4>Advertisement-top</h4></div>
+    <!--<div class="item ad_left"><h4>Advertisement-left</h4></div-->
+    <!--<div class="item main_area">
+        <div class="image image-1"><img class="picture" src="/css/images/download.jpg " alt=""></div>
+        <div class="image image-2"><img class="picture" src= "/css/images/dark.jpg " alt=""></div>
+        <div class="image image-3"><img class="picture" src="/css/images/download.jpg " alt=""></div>
+        <div class="image image-4"><img class="picture" src="/css/images/download.jpg " alt=""></div>
+        <div class="image image-5"><img class="picture" src="/css/images/download.jpg " alt=""></div>
+        <div class="image image-6"><img class="picture" src="/css/images/download.jpg " alt=""></div>
+    </div>-->
     <div class="item ad_top">
         <div id="tst" class="adcont"></div>
     </div>
-    <div class="item ad_left"><h4>Advertisement-left</h4></div>
+    <!--<div class="item ad_left"><h4>Advertisement-left</h4></div-->
     <div id="imgcont" class="item main_area">
-       <div class="image image-1"><div><img class="picture" src="/css/images/download.jpg" alt=""></div><div>
+       <!--<div class="image image-1"><div><img class="picture" src="/css/images/download.jpg" alt=""></div><div>
         <div class="buttons_below_image">
-            <div class="view_button">View More</div>
-            <div class="buy_button">Buy</div>
+            <div class="view_button"><button>View More</button></div>
+            <div class="buy_button"><button>Buy</button></div>
         </div>
         <div class="desc_below_image"><p>description goes in here</p></div>
-       </div></div>
-        <!--<div class="image image-2"><img class="picture" src="/css/images/download.jpg" alt=""></div>
-        <div class="image image-3"><img class="picture" src="/css/images/caveman.jpg" alt=""></div>
-        <div class="image image-4"><img class="picture" src="/css/images/marble1.jpg" alt=""></div>
-        <div class="image image-5"><img class="picture" src="/css/images/lakeside.jpg" alt=""></div>
+       </div></div>-->
+       <!--<div class='image image-1'>
+           <div class='imgpart'>
+               <img class='picture' src=/css/images/download.jpg onclick='addToCart(this);'>
+            </div>
+            <div class='description_of_image'>
+                <div class='buttons_below_image'>
+                    <form action='/views' method='get'>
+                        <div class='view_button'>
+                            <button>View More</button>
+                        </div>
+                    </form>
+                    <div class='buy_button' onclick='A'>
+                        <button>Add To Cart</button>
+                    </div>
+                </div>
+                <div class='desc_below_image'>
+                    <p>description goes in here</p>
+                </div>
+            </div>
+        </div>
+        =======================================================================
+        <div class='image image-2'>
+            <div class='imgpart'>
+                <img class='picture' src=/css/images/download.jpg onclick='addToCart(this);'>
+             </div>
+             <div class='description_of_image'>
+                 <div class='buttons_below_image'>
+                     <form action='/views' method='get'>
+                         <div class='view_button'>
+                             <button>View More</button>
+                         </div>
+                     </form>
+                     <div class='buy_button' onclick='A'>
+                         <button>Add To Cart</button>
+                     </div>
+                 </div>
+                 <div class='desc_below_image'>
+                     <p>description goes in here</p>
+                 </div>
+             </div>
+         </div>
+         <div class='image image-3'>
+            <div class='imgpart'>
+                <img class='picture' src=/css/images/download.jpg onclick='addToCart(this);'>
+             </div>
+             <div class='description_of_image'>
+                 <div class='buttons_below_image'>
+                     <form action='/views' method='get'>
+                         <div class='view_button'>
+                             <button>View More</button>
+                         </div>
+                     </form>
+                     <div class='buy_button' onclick='A'>
+                         <button>Add To Cart</button>
+                     </div>
+                 </div>
+                 <div class='desc_below_image'>
+                     <p>description goes in here</p>
+                 </div>
+             </div>
+         </div>
+         <div class='image image-4'>
+            <div class='imgpart'>
+                <img class='picture' src=/css/images/download.jpg onclick='addToCart(this);'>
+             </div>
+             <div class='description_of_image'>
+                 <div class='buttons_below_image'>
+                     <form action='/views' method='get'>
+                         <div class='view_button'>
+                             <button>View More</button>
+                         </div>
+                     </form>
+                     <div class='buy_button' onclick='A'>
+                         <button>Add To Cart</button>
+                     </div>
+                 </div>
+                 <div class='desc_below_image'>
+                     <p>description goes in here</p>
+                 </div>
+             </div>
+         </div>-->
+
+        
+       <!--<div class="image image-1"><img class="picture" src="/css/images/download.jpg" alt=""></div>
+       <div class="image image-1"><img class="picture" src="/css/images/download.jpg" alt=""></div>
+       <div class="image image-1"><img class="picture" src="/css/images/download.jpg" alt=""></div>
+       <div class="image image-1"><img class="picture" src="/css/images/download.jpg" alt=""></div>
+       <div class="image image-1"><img class="picture" src="/css/images/caveman.jpg" alt=""></div>
+       <div class="image image-1"><img class="picture" src="/css/images/citylights.jpg" alt=""></div>
+        <div class="image image-2"><img class="picture" src="/css/images/caveman.jpg" alt=""></div>
+        <div class="image image-3"><img class="picture" src="/css/images/marble1.jpg" alt=""></div>
+        <div class="image image-4"><img class="picture" src="/css/images/lakeside.jpg" alt=""></div>
+        <div class="image image-5"><img class="picture" src="/css/images/citylights.jpg" alt=""></div>
         <div class="image image-6"><img class="picture" src="/css/images/citylights.jpg" alt=""></div>-->
         
 
+
     </div>
     
-    <div class="item ad_right"><h4>Advertisement-right</h4></div>
+    <!--<div class="item ad_right"><h4>Advertisement-right</h4></div-->
+    
     <div class="item footer"><div class="t_bar"><div class="next_previous">
         <div class="prev_btn"><button onclick="popFromStack()">prev</button></div>
         <div class="show_page_num"><span id="page_num"></span></div>
