@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Buy Form</title>
+    <link rel="stylesheet" href="/css/form_style.css">
+</head>
+<body>
+    <div class="form_container">
+        <h2 style="text-align: center;">ORDER NOW</h2>
+        <form action="" method="get">
+            <div class="first_name form_element">
+                <label for="first_name">First Name</label><br><br>
+                <input type="text" name="firstName" id="fname">
+            </div>
+            <div class="last_name form_element">
+                <label for="last_name">Last Name</label><br><br>
+                <input type="text" name="lastName" id="lname">
+            </div>
+            <div class="email form_element">
+                <label for="email">Email</label><br><br>
+                <input type="email" name="email" id="email">
+            </div>
+            <div class="phone_number form_element">
+                <label for="first_name">Mobile Number</label><br><br>
+                <input type="number" name="phoneNumber" id="phnum">
+            </div>
+            <div class="house_number form_element">
+                <label for="house_number">House No/Flat No</label><br><br>
+                <input type="number" name="house_number" id="hnumber">
+            </div>
+            <div class="area form_element">
+                <label for="area">Street/Area/Locality</label><br><br>
+                <input type="text" name="area" id="area">
+            </div>
+            <div class="pin_code form_element">
+                <label for="pin_code">Pin Code</label><br><br>
+                <input type="number " name="pin_code" id="pin_code"><span id="errormsg"></span> <span><button type="button" onclick="hiturl();">validate</button></span>
+            </div>
+            <div class="city form_element">
+                <label for="city">City</label><br><br>
+                <input type="text" name="city" disabled id="city">
+            </div>
+            <div class="state form_element">
+                <label for="state">State</label><br><br>
+                <input type="text" name="state" disabled id="state">
+            </div>
+            <div class="landmark form_element">
+                <label for="landmark">Landmark</label><br><br>
+                <input type="text" name="landmark" id="landmark">
+            </div>
+            <button type="submit" >Submit</button>
+        </form>
+        
+    </div>
+    <script src="/css/javascript/form.js"></script>
+</body>
+</html>

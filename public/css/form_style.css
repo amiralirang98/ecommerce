@@ -1,0 +1,24 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    margin: 0;
+    background-color: white;
+}
+.form_container{
+    background: rgb(245, 237, 237);
+    margin: 10% 10% 10% 10%;
+}
+input{
+    width: 100%;
+}
+.form_element
+{
+    margin: 10px;
+}
+@media screen and (max-width: 550px)
+{
+    .form_container{
+        margin: 0;
+    }
+}

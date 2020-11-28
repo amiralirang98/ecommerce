@@ -12,14 +12,14 @@
     grid-gap: 10px;
 
 }
-.nav{
-    border: 1px solid black;
+/*.nav{
+    /*border: 1px solid black;
     background-color: blue;
+   
+}*/
+.navbar{
     display: flex;
     justify-content: space-between;
-}
-.navbar{
-  
    background-color: #594848;
    grid-area: nav;
     
@@ -43,7 +43,7 @@
         justify-content: space-between;
         align-items: center;
         background-color: #594848;
-        color: white;
+        color: white;*/
 
     .brand-title{
         font-size: 1.5rem;
@@ -97,17 +97,17 @@
     }*/
 
 .ad_top{
-    border: 1px solid black;
+    //border: 1px solid black;
     //background-color: blueviolet;
     grid-area: ad_top;
 }
 .ad_left{
-    border: 1px solid black;
+    //border: 1px solid black;
     //background-color: brown;
     grid-area: ad_left;
 }
 .main_area{
-    border: 1px solid black;
+    //border: 1px solid black;
     /*background-color: burlywood;*/
     grid-area: main_area;
     display: grid;
@@ -124,7 +124,7 @@
     grid-gap: 50px;*/
 }
 .t_bar{
-    border: 1px solid black;
+    //border: 1px solid black;
     //grid-area: t_bar;
     //background-color: lawngreen;
 }
@@ -195,12 +195,12 @@
     
 }
 .ad_right{
-    border: 1px solid black;
+    //border: 1px solid black;
     //background-color: greenyellow;
     grid-area: ad_right;
 }
 .footer{
-    border: 1px solid black;
+    //border: 1px solid black;
     //background-color: green;
     grid-area: footer;
 }
@@ -281,20 +281,27 @@ t_bar ul li.pagenumber.active{
      grid-template-rows: 0.25fr 0.75fr 8fr 0.1fr 0.1fr 0.75fr;
      grid-template-areas: "nav" "ad_top" "main_area" "ad_left" "ad_right" "footer";
  }
+ .main_area
+ {
+     display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(6,1fr);
+    grid-template-areas: "imgmain1" "imgmain2" "imgmain3" "imgmain4" "imgmain5" "imgmain6";
+ }
  /*#imgcont{
      display: grid;
      grid-template-columns: 1fr;
      grid-template-rows: 2fr 2fr 2fr 2fr 2fr 2fr 2fr;
      grid-template-areas: "imgmain" "imgmain" "imgmain" "imgmain" "imgmain" "imgmain" "t_bar";
  } */ 
- /*.toggle-button{
+ .toggle-button{
      display: flex;
  } 
  .bar-links{
      display: none;
      width: 100%;
  }
- .bar{
+ .navbar{
      flex-direction: column;
      align-items: flex-start;
 
@@ -313,6 +320,6 @@ t_bar ul li.pagenumber.active{
  }
  .bar-links.active{
      display: flex;
- }*/
+ }
 
 }

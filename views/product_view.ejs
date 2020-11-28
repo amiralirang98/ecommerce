@@ -1,2 +1,25 @@
-<h1>Product view goes in here</h1>
-<form action="/" method="GET"><button>Back</button></form>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/view_page_styling.css">
+    <title>Detailed description of product</title>
+</head>
+<body>
+    <div class="main_container">
+        <div id="image_container" class="main_image_container"><img class="main_picture" src="/css/images/download.jpg" alt=""></div>
+        <div class="followup_image_container">
+            <img class="followup_picture" src="/css/images/download.jpg" onclick="displayAsMain(this)">
+            <img class="followup_picture" src="/css/images/marble.jpg" onclick="displayAsMain(this)">
+            <img class="followup_picture" src="/css/images/wedges.jpg" onclick="displayAsMain(this)">
+            <img class="followup_picture" src="/css/images/lakeside.jpg" onclick="displayAsMain(this)">
+
+        </div>
+        <div class="detailed_description_of_prouct"><p>detailed description will go here</p></div>
+        <div class="buy_button_container"><p>buy button will reside here</p></div>
+    </div>
+    <script src="/css/javascript/view_page.js"></script>
+
+</body>
+</html>

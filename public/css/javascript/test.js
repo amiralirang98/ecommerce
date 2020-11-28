@@ -3,15 +3,9 @@ var navbarlinks= document.getElementsByClassName('bar-links')[0]
 togglebutton=addEventListener('click',function(){
     navbarlinks.classList.toggle('active')
 })*/
-var rethtml=""
 var retimage=""
 var retarrayimage=""
-for (let index = 0; index < 5; index++) {
-    document.getElementById('tst').innerHTML= rethtml+"<h1 class='testclass'>"+index+"</h1>";
-    rethtml=document.getElementById('tst').innerHTML
-
-}
-var arr = ['download','citylights','lakeside','fireman','marble']
+var arr = ['download','citylights','lakeside','fireman','marble','wedges','caveman','dark','citylights','fireman','download','citylights','lakeside','fireman','marble','wedges','caveman','dark','citylights','fireman']
 var arrayDivide=[]
 const len=arr.length
 var x=0;
@@ -39,7 +33,7 @@ for (let index = 0; index < arr.length; index++) {
     imgurl=url+arr[index]+".jpg"
    /* document.getElementById('imgcont').innerHTML="<div class='image image-1'><img class='picture' src='"+imgurl+"' alt=></div>"+retimage;
     retimage=document.getElementById('imgcont').innerHTML*/
-    document.getElementById('imgcont').innerHTML="<div class='image image-"+(index+1)+"'><div class='imgpart'><img class='picture' src='"+imgurl+"' onclick='addToCart(this);'></div><div class='description_of_image'><div class='buttons_below_image'><form action='/views' method='get'><div class='view_button'><button>View More</button></div></form><div class='buy_button' onclick='A'><button>Add To Cart</button></div></div><div class='desc_below_image'><p>description goes in here</p></div></div></div>"+retarrayimage;
+    document.getElementById('imgcont').innerHTML="<div class='image image-"+(index+1)+"'><div class='imgpart'><img class='picture' src='"+imgurl+"' onclick='addToCart(this);'></div><div class='description_of_image'><div class='buttons_below_image'><form action='/views' method='get'><div class='view_button'><button>View More</button></div></form><div class='buy_button' onclick='A'><button>Add To Cart</button></div></div><div class='desc_below_image'><p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p></div></div></div>"+retarrayimage;
     retarrayimage=document.getElementById('imgcont').innerHTML
 
 }
@@ -116,7 +110,7 @@ else{
     function dispImage(image,num)
     {
         imgurl=url+image+".jpg"
-    document.getElementById('imgcont').innerHTML="<div class='image image-"+num+"'><div class='imgpart'><img class='picture' src='"+imgurl+"' onclick='addToCart(this);'></div><div class='description_of_image'><div class='buttons_below_image'><form action='/views' method='get'><div class='view_button'><button>View More</button></div></form><div class='buy_button' onclick='A'><button>Add To Cart</button></div></div><div class='desc_below_image'><p>description goes in here</p></div></div></div>"+retarrayimage;
+    document.getElementById('imgcont').innerHTML="<div class='image image-"+num+"'><div class='imgpart'><img class='picture' src='"+imgurl+"' onclick='addToCart(this);'></div><div class='description_of_image'><div class='buttons_below_image'><form action='/views' method='get'><div class='view_button'><button>View More</button></div></form><div class='buy_button'><button class=' addToCartButton' onclick='cartFunction(event);'>Add To Cart</button></div></div><div class='desc_below_image'><p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p></div></div></div>"+retarrayimage;
     retarrayimage=document.getElementById('imgcont').innerHTML
     }
     console.log(localStorage)
